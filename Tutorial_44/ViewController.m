@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"CustomSeguetoSecondView"]) {
+        
+        SecondViewController *destinationViewController = (SecondViewController *)segue.destinationViewController;
+        
+        destinationViewController.colorstring = @"purple";
+    }
+}
+
+-(IBAction)unwindfromSecondView:(UIStoryboardSegue *)sender {
+    
+    self.view.backgroundColor = [UIColor cyanColor];
+    
 }
 
 @end
