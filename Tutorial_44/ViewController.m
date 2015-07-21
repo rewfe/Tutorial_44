@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "MyCustomUnwindSegue.h"
 
 @interface ViewController ()
 
@@ -41,5 +42,20 @@
     self.view.backgroundColor = [UIColor cyanColor];
     
 }
+
+- (IBAction)returnedFromSegue:(UIStoryboardSegue *)segue {
+    
+    NSLog(@"Returned from second view");
+    
+    if ([[segue identifier] isEqualToString:@"UnwindFromSecondView"]) {
+        
+        self.view.backgroundColor = [UIColor orangeColor];
+    }
+    
+    
+    
+}
+
+
 
 @end

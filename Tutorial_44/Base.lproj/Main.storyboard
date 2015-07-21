@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3rC-9d-vVh" kind="show" identifier="CustomSeguetoSecondView" id="uUc-d3-8cU"/>
+                                    <segue destination="3rC-9d-vVh" kind="custom" identifier="UnwindFromSecondView" customClass="MyCustomSegue" id="uUc-d3-8cU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5g7-Od-Mqc" kind="unwind" identifier="CustomUnwindfromSecondView" unwindAction="unwindfromSecondView:" id="hzF-Nl-Gw5"/>
+                                    <segue destination="5g7-Od-Mqc" kind="unwind" identifier="UnwindFromSecondView" unwindAction="returnedFromSegue:" id="0Xk-lu-gRL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1604" y="289"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Nav Controller-->
         <scene sceneID="7oJ-zx-iH7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PHP-5x-Pju" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PHP-5x-Pju" customClass="MyNavController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TR6-eH-zKh">

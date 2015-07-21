@@ -15,6 +15,9 @@
 		843F178F1B59D682008427EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843F178D1B59D682008427EA /* LaunchScreen.xib */; };
 		843F179B1B59D682008427EA /* Tutorial_44Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F179A1B59D682008427EA /* Tutorial_44Tests.m */; };
 		843F17A91B59DB22008427EA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F17A81B59DB22008427EA /* SecondViewController.m */; };
+		844CE43E1B5DB42200B28F2C /* MyCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CE43D1B5DB42200B28F2C /* MyCustomSegue.m */; };
+		844CE4411B5DB5AA00B28F2C /* MyCustomUnwindSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CE4401B5DB5AA00B28F2C /* MyCustomUnwindSegue.m */; };
+		844CE4441B5DB98700B28F2C /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CE4431B5DB98700B28F2C /* MyNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		843F179A1B59D682008427EA /* Tutorial_44Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial_44Tests.m; sourceTree = "<group>"; };
 		843F17A71B59DB22008427EA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		843F17A81B59DB22008427EA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		844CE43C1B5DB42200B28F2C /* MyCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomSegue.h; sourceTree = "<group>"; };
+		844CE43D1B5DB42200B28F2C /* MyCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomSegue.m; sourceTree = "<group>"; };
+		844CE43F1B5DB5AA00B28F2C /* MyCustomUnwindSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomUnwindSegue.h; sourceTree = "<group>"; };
+		844CE4401B5DB5AA00B28F2C /* MyCustomUnwindSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomUnwindSegue.m; sourceTree = "<group>"; };
+		844CE4421B5DB98700B28F2C /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		844CE4431B5DB98700B28F2C /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 				843F177E1B59D681008427EA /* Supporting Files */,
 				843F17A71B59DB22008427EA /* SecondViewController.h */,
 				843F17A81B59DB22008427EA /* SecondViewController.m */,
+				844CE43C1B5DB42200B28F2C /* MyCustomSegue.h */,
+				844CE43D1B5DB42200B28F2C /* MyCustomSegue.m */,
+				844CE43F1B5DB5AA00B28F2C /* MyCustomUnwindSegue.h */,
+				844CE4401B5DB5AA00B28F2C /* MyCustomUnwindSegue.m */,
+				844CE4421B5DB98700B28F2C /* MyNavController.h */,
+				844CE4431B5DB98700B28F2C /* MyNavController.m */,
 			);
 			path = Tutorial_44;
 			sourceTree = "<group>";
@@ -225,8 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				843F17A91B59DB22008427EA /* SecondViewController.m in Sources */,
+				844CE4411B5DB5AA00B28F2C /* MyCustomUnwindSegue.m in Sources */,
 				843F17871B59D681008427EA /* ViewController.m in Sources */,
 				843F17841B59D681008427EA /* AppDelegate.m in Sources */,
+				844CE43E1B5DB42200B28F2C /* MyCustomSegue.m in Sources */,
+				844CE4441B5DB98700B28F2C /* MyNavController.m in Sources */,
 				843F17811B59D681008427EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
